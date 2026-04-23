@@ -4,6 +4,7 @@
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+
 ![Clerk](https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white)
 ![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white)
 ![Inngest](https://img.shields.io/badge/Inngest-000000?style=for-the-badge)
@@ -60,8 +61,8 @@ A full-stack **real-time code interview platform** for conducting **one-on-one t
 ### Authentication
 
 - Clerk-based authentication  
-- User creation/deletion handled via webhooks  
-- Background sync handled using Inngest  
+- User creation and deletion via webhooks  
+- Background synchronization handled by Inngest  
 
 ---
 
@@ -78,53 +79,35 @@ A full-stack **real-time code interview platform** for conducting **one-on-one t
 
 - Create and join interview sessions  
 - One-on-one session model  
-- Host controls session lifecycle  
+- Host-controlled session lifecycle  
 
 ---
 
-### Problems Page
+### Problems
 
-- Access to curated top 150 coding problems  
-- Solve problems directly without creating a session  
-- Includes:
-  - Description  
-  - Examples  
-  - Constraints  
+- Curated set of 150 coding problems  
+- Solve without creating a session  
+- Includes descriptions, examples, and constraints  
 
 ---
 
 ### Real-Time Communication
 
-- One-on-one video call inside session  
-- Audio and camera controls  
+- One-on-one video calls  
+- Audio and camera controls
+- Real-time messaging  
+- Supports text, images, and GIFs via `/giphy`  
 - Screen sharing  
 - Reactions  
-
----
-
-### Chat
-
-- Real-time messaging inside session  
-- Supports:
-  - Text  
-  - Images  
-  - GIFs using `/giphy` command  
 
 ---
 
 ### Coding Environment
 
 - Monaco Editor  
-- Supports:
-  - JavaScript  
-  - Python  
-  - Java  
-  - C++  
-  - C  
-  - C#  
-
-- Code execution using Judge0  
-- Displays output and errors  
+- Supports JavaScript, Python, Java, C++, C, and C#  
+- Code execution powered by Judge0  
+- Output and error display
 
 ---
 
@@ -161,12 +144,10 @@ realtime-code-interview-platform/
 
 Create a `.env` file in each project root:
 
-- `backend/.env` (beside `src`)
-- `frontend/.env` (beside `src`)
-
 ---
 
 ### Backend
+- `backend/.env` (beside `src`)
 
 ```
 PORT=your_port
@@ -188,6 +169,7 @@ CLIENT_URL=your_frontend_url
 ---
 
 ### Frontend
+- `frontend/.env` (beside `src`)
 
 ```
 VITE_API_URL=your_backend_url/api
